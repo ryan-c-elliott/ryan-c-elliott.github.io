@@ -1,3 +1,4 @@
+# dv.view not rendering for inline Dataview JS
 To avoid copy-pasting the inline query for backlinks for each zettel (using the Templater plugin), I wanted to store the backlink generation code in a separate `.js` file.
 
 The problem with this is that inline Dataview JS doesn't work with asynchronous functions (functions called with `await`) that return a Promise; they need to return a single, renderable JS value.
